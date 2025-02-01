@@ -1,6 +1,6 @@
 {
   "name": "ts-data-object",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A dataclass library for typescript, inspired from Python dataclass",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
