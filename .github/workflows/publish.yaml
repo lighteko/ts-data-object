@@ -5,11 +5,11 @@ on:
     branches:
       - main
     types:
-      - closed # Trigger when the PR is closed (merged)
+      - closed  # Trigger when the PR is closed (merged)
 
 jobs:
   publish:
-    if: github.event.pull_request.merge == true
+    if: github.event.pull_request.merged == true 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,6 +18,6 @@ jobs:
           node-version: "20"
 
       - name: Publish package to NPM
-      - uses: JS-DevTools/npm-publish@v3
+        uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_TOKEN }}
