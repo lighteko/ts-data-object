@@ -9,7 +9,7 @@ import {
   IsNumber,
 } from "class-validator";
 
-export function dataclass() {
+export function DataClass() {
   return function (constructor: Function) {
     const properties = Reflect.ownKeys(constructor.prototype);
 
