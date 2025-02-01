@@ -30,14 +30,11 @@ import { DataClass, serialize, IsString, IsInt } from "ts-data-object";
 
 @DataClass()
 class User {
-  @IsString()
   name: string;
-
-  @IsInt()
   age: number;
 }
 
-const user = new User({ name: "Alice", age: 25 });
+const user = { name: "Alice", age: 25 };
 console.log(serialize(User, user));
 ```
 ## License
