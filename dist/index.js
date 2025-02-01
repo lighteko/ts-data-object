@@ -1,7 +1,7 @@
 import "reflect-metadata";
 import { plainToInstance, Type } from "class-transformer";
 import { validate, IsString, IsArray, IsDate, ValidateNested, IsNumber, } from "class-validator";
-export function dataclass() {
+export function DataClass() {
     return function (constructor) {
         const properties = Reflect.ownKeys(constructor.prototype);
         for (const property of properties) {
@@ -35,3 +35,5 @@ export async function serialize(cls, data) {
         throw new Error(JSON.stringify(errors));
     return instance;
 }
+export * from "class-transformer";
+export * from "class-validator";

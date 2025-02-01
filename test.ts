@@ -1,6 +1,6 @@
-import { dataclass, serialize } from "./dist/index";
+import { DataClass, serialize } from "./dist/index";
 
-@dataclass()
+@DataClass()
 class Provider {
   providerId!: string;
   categories!: string[];

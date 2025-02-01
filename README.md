@@ -26,7 +26,7 @@ yarn add ts-data-object class-transformer class-validator
 ## Usage
 
 ```typescript
-import { DataClass, serialize, IsString, IsInt } from "ts-data-object";
+import { DataClass, serialize } from "ts-data-object";
 
 @DataClass()
 class User {
