@@ -1,6 +1,6 @@
 # ts-data-object
 
-> A TypeScript package inspired by Python's ```dataclass```, designed to simplify object serialization, validation, and transformation using ```class-transformer``` and ```class-validator```.
+> A TypeScript package inspired by Python's `dataclass`, designed to simplify object serialization, validation, and transformation using `class-transformer` and class-validator`.
 
 ## Features
 
@@ -16,12 +16,12 @@
 
 ## Installation
 ```bash
-npm install ts-data-object class-transformer class-validator
+npm install ts-data-object
 ```
 
 or using yarn:
 ```bash
-yarn add ts-data-object class-transformer class-validator
+yarn add ts-data-object
 ```
 ## Usage
 
