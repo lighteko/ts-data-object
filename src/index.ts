@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { plainToInstance, Transform, Type } from "class-transformer";
+import { plainToInstance, Type } from "class-transformer";
 import {
   validate,
   IsString,
