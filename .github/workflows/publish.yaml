@@ -1,0 +1,23 @@
+name: "Publish to NPM"
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed # Trigger when the PR is closed (merged)
+
+jobs:
+  publish:
+    if: github.event.pull_request.merge == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: Publish package to NPM
+      - uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.NPM_TOKEN }}

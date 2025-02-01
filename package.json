@@ -1,5 +1,5 @@
 {
-  "name": "ts-dataclass",
+  "name": "ts-data-object",
   "version": "1.0.0",
   "description": "A dataclass library for typescript, inspired from Python dataclass",
   "main": "dist/index.js",
@@ -10,9 +10,11 @@
     "test": "tsx test.ts"
   },
   "dependencies": {
-    "class-transformer": "^0.5.1",
-    "class-validator": "^0.14.1",
     "reflect-metadata": "^0.2.2"
+  },
+  "peerDependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1"
   },
   "devDependencies": {
     "@types/node": "^22.13.0",

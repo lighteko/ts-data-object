@@ -51,9 +51,15 @@ export function dataclass() {
   };
 }
 
-export async function serialize<T>(cls: new () => T, data: object): Promise<T> {
+export async function serialize<T>(
+  cls: new (...args: any[]) => T,
+  data: object
+): Promise<T> {
   const instance = plainToInstance(cls, data);
   const errors = await validate(instance as Object);
   if (errors.length > 0) throw new Error(JSON.stringify(errors));
   return instance;
 }
+
+export * from "class-transformer";
+export * from "class-validator";
