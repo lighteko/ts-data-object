@@ -1,0 +1,28 @@
+{
+  "name": "ts-dataclass",
+  "version": "1.0.0",
+  "description": "A dataclass library for typescript, inspired from Python dataclass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lighteko/ts-dataclass.git"
+  },
+  "author": "lighteko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lighteko/ts-dataclass/issues"
+  },
+  "homepage": "https://github.com/lighteko/ts-dataclass#readme",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "reflect-metadata": "^0.2.2"
+  },
+  "type": "module"
+}
