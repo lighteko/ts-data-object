@@ -1,6 +1,6 @@
 # ts-data-object
 
-> A TypeScript package inspired by Python's `dataclass`, designed to simplify object serialization, validation, and transformation using `class-transformer` and class-validator`.
+> A TypeScript package inspired by Python's `dataclass`, designed to simplify object serialization, validation, and transformation using `class-transformer` and `class-validator`.
 
 ## Features
 
